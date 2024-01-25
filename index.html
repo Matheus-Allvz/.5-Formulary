@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Documento</title>
+</head>
+<body>
+  <header>
+    <div id="header_text">
+    <h1 id="title">Matheus Alves</h1>
+    <p id="description">Formulário de cadastro de cliente</p>
+    </div>
+  </header>
+  <div id="block">
+    <form id="survey-form">
+      <div>
+      <label id="name-label">Nome do cliente:<span>(Nome completo)</span></label>
+      <input id="name" type="text" required placeholder="Matheus Alves">
+      </div>
+
+      <div>
+      <label id="email-label">Email do cliente:<span>(Não se esqueça do @)</span></label>
+      <input id="email" type="email" required placeholder="matheusalves@gmail.com">
+      </div>
+
+      <div>
+      <label id="number-label">Telefone do cliente:<span>(Somente números)</span></label>
+      <input id="number" type="number" min="1" max="9999999999" placeholder="62993123343">
+      </div>
+
+      <div>
+      <label>Por onde ele ficou sabendo do meu trabalho?<span>(Selecione uma opção válida)</span></label>
+      <select id="dropdown">
+        <option></option>
+        <option>Serviço oferecido</option>
+        <option>Anúncios Online</option>
+        <option>Redes sociais</option>
+        <option>Indicações</option>
+        <option>Outro</option>
+      </select>
+      </div>
+      
+      <div id="service_value">
+        <label>Qual o valor do serviço?<span>(Aproximadamente)</span></label>
+        <label>
+        <input type="radio" name="number_services" value="<100"> Menos de 100R$
+        </label>
+        <label>
+        <input type="radio" name="number_services" value="100-300"> Entre 100R$ e 300R$
+        </label>
+        <label>
+        <input type="radio" name="number_services" value="300-500"> Entre 300R$ e 500R$
+        </label>
+        <label>
+        <input type="radio" name="number_services" value=">500"> Mais de 500R$
+        </label>
+      </div>
+
+      <div>
+        <label>Quais serviços serão executados?<span>(Selecione uma ou mais opções)</span></label>
+        <label><input type="checkbox" value="1"> Construção da Identidade Visual de uma marca</label>
+        <label><input type="checkbox" value="2"> Projeto de Design Gráfico</label>
+        <label><input type="checkbox" value="3"> Desenvolvimento de um site</label>
+        <label><input type="checkbox" value="4"> Analíse de dados com Python</label>
+        <label><input type="checkbox" value="5"> Automação de uma atividade usando Python</label>
+      </div>
+
+      <div>
+        <label>Informações extras:</label>
+        <textarea id="text-area" name="informacoes_extras" placeholder="Digite algo aqui..."></textarea>
+      </div>
+
+      <div>
+        <button id="submit" type="submit">Enviar formulário</button>
+      </div>
+      <form>
+  </div>
+</body>
+</html>
